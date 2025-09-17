@@ -19,7 +19,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'bash src/hello.sh'
+                // if src/helloworld is executable:
+                sh './src/helloworld'
+
+                // or, if not executable:
+                // sh 'bash src/helloworld'
             }
         }
 
@@ -36,3 +40,4 @@ pipeline {
         }
     }
 }
+
