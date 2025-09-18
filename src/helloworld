@@ -1,2 +1,3 @@
 echo "Hello from Jenkins Pipeline!"
 echo "welcome"
+echo "adding 3rd line"
